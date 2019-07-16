@@ -12,8 +12,11 @@ public class G16 {
 	@Test
   public void f() {
 		driver.get("https://www.google.com/");
+		
 		driver.manage().window().maximize();
+		System.out.println("Done");
   }
+	
   @BeforeTest
   public void beforeTest() {
 	  System.setProperty("webdriver.chrome.driver", "D:\\158\\chromedriver.exe");
