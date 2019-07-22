@@ -15,6 +15,7 @@ public class G16 {
 		
 		driver.manage().window().maximize();
 		System.out.println("Done");
+		System.out.println("ok");
   }
 	
   @BeforeTest
