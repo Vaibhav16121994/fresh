@@ -1,6 +1,8 @@
 package ghub;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,8 +16,10 @@ public class G16 {
 		driver.get("https://www.google.com/");
 		
 		driver.manage().window().maximize();
-		System.out.println("Done");
-		System.out.println("ok");
+		WebElement Search=driver.findElement(By.name("q"));
+		Search.sendKeys("Youtube");
+		Search.submit();
+		
   }
 	
   @BeforeTest
